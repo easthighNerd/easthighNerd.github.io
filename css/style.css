@@ -32,8 +32,8 @@ body {
 }
 
 header {
+    background: #87A556;
     background: url('../img/DSC_3843.webp') no-repeat 0;
-    #background: #87A556;
     color: white;
     padding-top: 30px;
     min-height: 70px;
