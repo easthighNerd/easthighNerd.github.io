@@ -2,17 +2,21 @@ body {
     font: 15px/1.5 noto-sans;
     padding: 0;
     margin: 0;
-	background-color: #282c37;
+    background-color: #282c37;
 	color: white;
 }
 
 .container {
-	width: 80%;
+	width: 90%;
     margin: auto;
     overflow: hidden;
 }
 
-.button_1{
+section .container {
+    width: 80%;
+}
+
+li button {
     height: 38px;
     background: #9baec8;
     border: 0;
@@ -22,7 +26,7 @@ body {
     
 }
 
-.button_2{
+li.current button {
     height: 38px;
     background: #0044AA;
     border: 0;
@@ -32,16 +36,19 @@ body {
 }
 
 header {
-    background: #87A556;
-    background: url('../img/DSC_3843.webp') no-repeat 0;
+    background-color: #87A556;
+    background-image: url('../img/DSC_3843.webp');
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size: cover;
     color: white;
-    padding-top: 30px;
+    padding-top: 10px;
     min-height: 70px;
     border-bottom: #0087ED 3px solid;
     text-shadow: black 3px 3px 5px;
 }
 
-header a{
+header a {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
@@ -53,58 +60,76 @@ ul{
     padding: 0;
 }
 
-header li{
+header li {
     /*float: left;*/
     display: inline;
     padding: 0 20px 0 20px;
 }
 
-header #branding{
+header #branding {
     float: left;
 }
 
-header #branding h1{
+header #branding h1 {
     margin: 0;
 }
 
-header nav{
-    float: right;
-    margin-top: 113px;
-    background: #9baec8;
+@media only screen and (max-width: 600px) {
+    .desktop {
+        display: none;
+    }
+
+    header nav {
+        float: top;
+        margin-left: 73%;
+    }
 }
 
-header .highlight, header .current a{
+@media only screen and (min-width: 601px) {
+    .mobile {
+        display: none;
+    }
+
+    header nav {
+        float: right;
+        margin-top: 113px;
+        background: #9baec8;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+}
+
+header .highlight, header .current a {
     color: #ffffff;
     font-weight: bold;
 }
 
-header a:hover{
+header a:hover {
  color: #0087ED;
  font-weight: bold;
 }
 
-#showcase{
+#showcase {
     min-height: 400px;
     background: url('../img/DSC_3843.png') no-repeat 0;
     text-align: center;
-    color: white;
 }
 
-#showcase h1{
+#showcase h1 {
     margin-top: 100px;
     font-size: 55px;
     margin-bottom: 10px;
 }
 
-#showcase p{
+#showcase p {
     font-size: 20px;
 }
 
-#boxes{
+#boxes {
     margin-top: 20px;
 }
 
-#boxes .box{
+#boxes .box {
     float: left;
     text-align: center;
     width: 33%;
@@ -113,7 +138,7 @@ header a:hover{
     color: black;
 }
 
-#boxes a{
+#boxes a {
     color: black;
     font-weight: bold;
     text-decoration: none;
@@ -121,7 +146,7 @@ header a:hover{
     font-size: 16px;
 }
 
-#boxes a:hover{
+#boxes a:hover {
     color: #0087ED;
     font-weight: bold;
 }
