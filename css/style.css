@@ -7,7 +7,6 @@ body {
 }
 
 .container {
-	width: 90%;
     margin: auto;
     overflow: hidden;
 }
@@ -20,19 +19,13 @@ li button {
     height: 38px;
     background: #9baec8;
     border: 0;
-    padding: 0 20px 0 20px;
     color: white;
     text-shadow: black 3px 3px 5px;
     
 }
 
 li.current button {
-    height: 38px;
     background: #0044AA;
-    border: 0;
-    padding: 0 20px 0 20px;
-    color: white;
-    text-shadow: black 3px 3px 5px;
 }
 
 header {
@@ -42,38 +35,40 @@ header {
     background-position: 0;
     background-size: cover;
     color: white;
-    padding-top: 10px;
+	padding-left: 5%;
     min-height: 70px;
-    border-bottom: #0087ED 3px solid;
+    border-bottom: #F57421 3px solid;
     text-shadow: black 3px 3px 5px;
 }
 
-header a {
+header button {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
 }
 
+header button {
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+}
+
 ul{
+    list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-header li {
-    /*float: left;*/
-    display: inline;
-    padding: 0 20px 0 20px;
-}
-
 header #branding {
     float: left;
+	padding-top: 10px;
 }
 
 header #branding h1 {
     margin: 0;
 }
 
+/* V Mobile View V */
 @media only screen and (max-width: 600px) {
     .desktop {
         display: none;
@@ -81,10 +76,51 @@ header #branding h1 {
 
     header nav {
         float: top;
-        margin-left: 73%;
+    }
+    
+    header ul {
+        float: right;
+        display: block;
+    }
+    
+    header #branding {
+        padding-top: 5%;
+    }
+    
+    header li button {
+        width: 100%;
+    }
+    
+    #expand-toggle {
+        display: none;
+    }
+    
+    .expandable {
+        visibility: collapse;
+    }
+    
+    #expand-btn {
+        background-color: #9baec8;
+        text-align: center;
+        width: 100%;
+        float: right;
+        font-size: 16px;
+        text-decoration: none;
+        height: 31px;
+        padding-top: 5px;
+    }
+    
+    #expand-toggle:checked ~ .expandable {
+        visibility: visible;
+    }
+    
+    #expand-toggle:checked ~ #expand-btn {
+        background-color: #F57421;
     }
 }
+/* ^ Mobile View ^ */
 
+/* V Desktop View V */
 @media only screen and (min-width: 601px) {
     .mobile {
         display: none;
@@ -92,22 +128,27 @@ header #branding h1 {
 
     header nav {
         float: right;
-        margin-top: 113px;
-        background: #9baec8;
-        border-top-right-radius: 10px;
+        margin-top: 123px;
+    }
+    
+    header li {
+        float: left;
+        display: inline
+    }
+    
+    header button:hover {
+        background-color: #0087ED;
+    }
+    
+    header button.first {
         border-top-left-radius: 10px;
     }
+    
+    /*header button.last {
+        border-top-right-radius: 10px;
+    }*/
 }
-
-header .highlight, header .current a {
-    color: #ffffff;
-    font-weight: bold;
-}
-
-header a:hover {
- color: #0087ED;
- font-weight: bold;
-}
+/* ^ Desktop View ^ */
 
 #showcase {
     min-height: 400px;
