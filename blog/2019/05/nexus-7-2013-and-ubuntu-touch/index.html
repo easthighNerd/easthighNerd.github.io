@@ -16,16 +16,33 @@ height="100">
                 </div>
                 <nav>
                     <ul>
-                        <li><button class="button_1"><a 
-href="https://easthighNerd.github.io/">Home</a></button></li>
-                        <li><button class="button_1"><a 
-href="https://easthighNerd.github.io/projects/">Projects</a></button></li>
-                        <li><button class="button_1"><a 
-href="https://github.com/easthighNerd/">Github</a></button></li>
-                        <li class="current"><button class="button_2"><a 
-href="https://easthighNerd.github.io/blog/">Blog</a></button></li>
-                        <li><button class="button_1"><a rel="me" 
-href="https://niu.moe/@easthighNerd">Mastodon</a></button></li>
+                        <input class="mobile" type="checkbox" id="expand-toggle" />
+                        <label class="mobile" for="expand-toggle" id="expand-btn">Menu</label>
+                        <li class="expandable">
+                            <a href="./">
+                                <button class="first">Home</button>
+                            </a>
+                        </li>
+                        <li class="expandable">
+                            <a href="./projects/">
+                                <button>Projects</button>
+                            </a>
+                        </li>
+                        <li class="expandable">
+                            <a href="https://github.com/easthighNerd/">
+                                <button>Github</button>
+                            </a>
+                        </li>
+                        <li class="current expandable">
+                            <a href="./blog/">
+                                <button>Blog</button>
+                            </a>
+                        </li>
+                        <li class="expandable">
+                            <a rel="me" href="https://niu.moe/@easthighNerd">
+                                <button class="last">Mastodon</button>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </div>
