@@ -25,11 +25,11 @@ li button {
 }
 
 li.current button {
-    background: #0044AA;
+    background: linear-gradient(45deg,#0044AA,#0068C8);
 }
 
 header {
-    background-color: #87A556;
+    background: linear-gradient(to bottom right, #87A556, #3BC18E);
     background-image: url('../img/DSC_3843.webp');
     background-repeat: no-repeat;
     background-position: 0;
@@ -66,95 +66,17 @@ ul{
 
 header #branding {
     float: left;
-	padding-top: 10px;
+    padding-top: 10px;
+}
+
+header #branding img {
+    width: 100px;
+    height: 100px;
 }
 
 header #branding h1 {
     margin: 0;
 }
-
-/* V Mobile View V */
-@media only screen and (max-width: 600px) {
-    .desktop {
-        display: none;
-    }
-
-    header nav {
-        float: top;
-    }
-
-    header ul {
-        float: right;
-        display: block;
-    }
-
-    header #branding {
-        padding-top: 5%;
-    }
-
-    header li button {
-        width: 100%;
-    }
-
-    #expand-toggle {
-        display: none;
-    }
-
-    .expandable {
-        visibility: collapse;
-    }
-
-    #expand-btn {
-        background-color: #9baec8;
-        text-align: center;
-        width: 100%;
-        float: right;
-        font-size: 16px;
-        text-decoration: none;
-        height: 31px;
-        padding-top: 5px;
-        text-transform: uppercase;
-    }
-
-    #expand-toggle:checked ~ .expandable {
-        visibility: visible;
-    }
-
-    #expand-toggle:checked ~ #expand-btn {
-        background-color: #F57421;
-    }
-}
-/* ^ Mobile View ^ */
-
-/* V Desktop View V */
-@media only screen and (min-width: 601px) {
-    .mobile {
-        display: none;
-    }
-
-    header nav {
-        float: right;
-        margin-top: 123px;
-    }
-
-    header li {
-        float: left;
-       /* display: inline*/
-    }
-
-    header button:hover {
-        background-color: #0087ED;
-    }
-
-    header button.first {
-        border-top-left-radius: 10px;
-    }
-
-    /*header button.last {
-        border-top-right-radius: 10px;
-    }*/
-}
-/* ^ Desktop View ^ */
 
 #showcase {
     min-height: 400px;
@@ -179,10 +101,10 @@ header #branding h1 {
 #boxes .box {
     float: left;
     text-align: center;
-    width: 33%;
     padding: 10px;
     background: #d9e1e8;
     color: black;
+    margin-bottom: 20px;
 }
 
 #boxes a {

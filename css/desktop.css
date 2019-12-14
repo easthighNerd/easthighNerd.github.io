@@ -1,0 +1,32 @@
+
+@media only screen and (min-width: 601px) {
+    .mobile {
+        display: none;
+    }
+
+    header nav {
+        float: right;
+        margin-top: 123px;
+    }
+
+    header li {
+        float: left;
+    }
+
+    header button:hover {
+        background-color: #0087ED;
+    }
+
+    header button.first {
+        border-top-left-radius: 10px;
+    }
+
+    #boxes .box {
+        width: 33%;
+    }
+
+    .box {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
