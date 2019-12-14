@@ -80,7 +80,7 @@ header #branding h1 {
 
 #showcase {
     min-height: 400px;
-    background: url('../img/DSC_3843.png') no-repeat 0;
+    /* background: url('../img/DSC_3843.webp') no-repeat 0; */
     text-align: center;
 }
 

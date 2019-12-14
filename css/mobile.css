@@ -1,14 +1,14 @@
 
-@media only screen and (max-width: 600px) {
+@media (width <= 600px) {
     .desktop {
         display: none;
     }
 
     header nav {
-        float: top;
+        right: 0;
     }
 
-    header ul {
+    header nav ul {
         float: right;
         display: block;
     }
