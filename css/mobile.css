@@ -1,24 +1,11 @@
-
+/* V Phone V */
 @media only screen and (max-width: 600px) {
     .desktop {
         display: none;
     }
 
-    header nav {
-        right: 0;
-    }
-
-    header nav ul {
-        float: right;
-        display: block;
-    }
-
     header #branding {
         padding-top: 5%;
-    }
-
-    header li button {
-        width: 100%;
     }
 
     #expand-toggle {
@@ -54,3 +41,27 @@
         height: 25%;
     }
 }
+/* ^ Phone ^ */
+
+/* V Tablet V */
+@media only screen and (min-width: 601px) and (max-width: 1023px) {
+    .mobile {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    header nav {
+        right: 0;
+    }
+
+    header nav ul {
+        float: right;
+        display: block;
+    }
+
+    header li button {
+        width: 100%;
+    }
+}
+/* ^ Tablet ^ */
