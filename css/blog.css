@@ -24,17 +24,14 @@ header button.first {
     border-bottom-left-radius: 10px;
 }
 
-@media (width <= 600px) {
-    .mobile {
-        display: none;
-    }
+.mobile {
+    display: none;
+}
 
-    .expandable {
-        visibility: visible;
-    }
-    }
+.expandable {
+    visibility: visible;
+}
 
-    header li {
-        float: left;
-    }
+header li {
+    float: left;
 }
