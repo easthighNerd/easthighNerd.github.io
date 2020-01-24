@@ -1,5 +1,5 @@
 body {
-    background-color: #282c37;
+    background-color: #000000;
     color: white;
     font: 15px/1.5 noto-sans;
     padding: 0;
@@ -10,22 +10,24 @@ body {
     background: linear-gradient(to bottom right, #87A556, #3BC18E);
     background-image: url('../img/DSC_3843.webp');
     background-repeat: no-repeat;
-    /* background-position: 0; */
     background-size: cover;
-    color: white;
-    min-height: 70px;
+    height: 175px;
     text-shadow: black 3px 3px 5px;
-    margin-bottom: -1px;
+    color: white;
 }
 
 .header .logo {
-    width: 175px;
+    background-image: url(../img/user-icon.png);
+    background-repeat: no-repeat;
     height: 175px;
+    width: 175px;
+    background-size: cover;
 }
 
-.header h1 {
-    margin-top: -50px;
+.header .logo .text {
+    margin-top: 130px;
     margin-bottom: 0px;
+    float: left;
 }
 
 .nav {
@@ -33,7 +35,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #9baec8;
+    background: linear-gradient(45deg,#282c37,#9baec8);
     position: sticky;
     top: 0;
 }
@@ -52,12 +54,12 @@ body {
     cursor: pointer;
 }
 
-.nav a:hover {
-    background-color: #0087ED;
-}
-
 .nav a.current {
     background: linear-gradient(45deg,#0044AA,#0068C8);
+}
+
+.nav a:hover {
+    background: linear-gradient(45deg,#0087ED,#2b90d9);
 }
 
 .nav a.social {
