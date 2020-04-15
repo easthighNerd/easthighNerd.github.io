@@ -5,66 +5,39 @@
         <meta name="viewport" content="with=device-width">
 		<title>Blog</title>
         <link rel="stylesheet" href="../css/main.css">
-        <link rel="stylesheet" href="../css/desktop.css">
-        <link rel="stylesheet" href="../css/mobile.css">
-	</head>
+    </head>
+    
 	<body>
-		<header>
-            <div class="container">
-                <div id="branding">
-                    <img src="../img/user-icon.png" width="100" height="100">
-                    <h1><span>easthighNerd</span></h1>
-                </div>
-                <nav>
-                    <ul>
-                        <input class="mobile" type="checkbox" id="expand-toggle" />
-                        <label class="mobile" for="expand-toggle" id="expand-btn">Menu</label>
-                        <li class="expandable">
-                            <a href="../">
-                                <button class="first">Home</button>
-                            </a>
-                        </li>
-                        <li class="expandable">
-                            <a href="../projects/">
-                                <button>Projects</button>
-                            </a>
-                        </li>
-                        <li class="expandable">
-                            <a href="https://github.com/easthighNerd/">
-                                <button>Github</button>
-                            </a>
-                        </li>
-                        <li class="current expandable">
-                            <a href="./">
-                                <button>Blog</button>
-                            </a>
-                        </li>
-                        <li class="expandable">
-                            <a rel="me" href="https://niu.moe/@easthighNerd">
-                                <button class="last">Mastodon</button>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+		<div class="header">
+            <div class="logo">
+                <h1 class="text">easthighNerd</h1>
             </div>
-        </header>
-        <section id="boxes">
-            <div class="container">
-                <div class="box">
-                    <a href="../blog/2019/12/finally-finding-my-linux-home/"><img src="../blog/2019/12/finally-finding-my-linux-home/screenshot.png"alt="Finally Finding My Linux Home">
-                    <h3>Finally Finding My Linux Home</h3></a>
-                    <p>I have been using Linux for the past 3 years or so now. I have hopped from distro to distro, sometimes on a monthly or weekly basis, and I believe that now, at long last, I have finally found the distro to call my home.</p>
-                    <br>
-                    <p><i>2019/12/13</i></p>
-                </div>
-                <div class="box">
-                    <a href="../blog/2019/05/nexus-7-2013-and-ubuntu-touch/"><img src="../blog/2019/05/nexus-7-2013-and-ubuntu-touch/ubports-installer-nexus-7-2013-wifi.png"alt="Nexus 7 2013 (WiFi) and Ubuntu Touch">
-                    <h3>Nexus 7 2013 (WiFi) and Ubuntu Touch</h3></a>
-                    <p>About a month ago (give or take) I purchased a Nexus 7 2013 (WiFi) with the intent of flashing Ubuntu Touch (OTA 9) onto it.</p>
-                    <br>
-                    <p><i>2019/05/30</i></p>
-                </div>
+		</div>
+        <div class="nav">
+            <a href="../">Home</a>
+            <a href="../projects/">Projects</a>
+            <a href="https://github.com/easthighNerd/">Github</a>
+            <a class="current" href="./">Blog</a>
+            <a class="social" rel="me" href="https://busshi.moe/@easthighNerd">Mastodon</a>
+            <a class="social" href="https://pixelfed.social/easthighNerd">Pixelfed</a>
+        </div>
+
+        <div class="card-case">
+            <div class="card">
+                <a href="../blog/2019/12/finally-finding-my-linux-home/"><img src="../blog/2019/12/finally-finding-my-linux-home/screenshot.png"alt="Finally Finding My Linux Home">
+                <h3>Finally Finding My Linux Home</h3></a>
+                <p>I have been using Linux for the past 3 years or so now. I have hopped from distro to distro, sometimes on a monthly or weekly basis, and I believe that now, at long last, I have finally found the distro to call my home.</p>
+                <br>
+                <p><i>2019/12/13</i></p>
             </div>
-        </section>
+
+            <div class="card">
+                <a href="../blog/2019/05/nexus-7-2013-and-ubuntu-touch/"><img src="../blog/2019/05/nexus-7-2013-and-ubuntu-touch/ubports-installer-nexus-7-2013-wifi.png"alt="Nexus 7 2013 (WiFi) and Ubuntu Touch">
+                <h3>Nexus 7 2013 (WiFi) and Ubuntu Touch</h3></a>
+                <p>About a month ago (give or take) I purchased a Nexus 7 2013 (WiFi) with the intent of flashing Ubuntu Touch (OTA 9) onto it.</p>
+                <br>
+                <p><i>2019/05/30</i></p>
+            </div>
+        </div>
     </body>
 </html>

@@ -5,59 +5,31 @@
         <meta name="viewport" content="with=device-width">
 		<title>Nexus 7 2013 (WiFi) and Ubuntu Touch</title>
 		<link rel="stylesheet" href="../../../../css/main.css">
-		<link rel="stylesheet" href="../../../../css/desktop.css">
-		<link rel="stylesheet" href="../../../../css/mobile.css">
-		<link rel="stylesheet" href="../../../../css/blog.css">
-	</head>
+    </head>
+    
 	<body>
-		<header>
-            <div class="container">
-                <div id="branding">
-                    <img src="../../../../img/user-icon.png" width="100"
-height="100">
-                    <h1><span>easthighNerd</span></h1>
-                </div>
-                <nav>
-                    <ul>
-                        <input class="mobile" type="checkbox" id="expand-toggle" />
-                        <label class="mobile" for="expand-toggle" id="expand-btn">Menu</label>
-                        <li class="expandable">
-                            <a href="../../../../">
-                                <button class="first">Home</button>
-                            </a>
-                        </li>
-                        <li class="expandable">
-                            <a href="../../../../projects/">
-                                <button>Projects</button>
-                            </a>
-                        </li>
-                        <li class="expandable">
-                            <a href="https://github.com/easthighNerd/">
-                                <button>Github</button>
-                            </a>
-                        </li>
-                        <li class="current expandable">
-                            <a href="../../../">
-                                <button>Blog</button>
-                            </a>
-                        </li>
-                        <li class="expandable">
-                            <a rel="me" href="https://niu.moe/@easthighNerd">
-                                <button class="last">Mastodon</button>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+		<div class="header">
+            <!-- <img class="logo" src="./img/user-icon.png"> -->
+            <div class="logo">
+                <h1 class="text">easthighNerd</h1>
             </div>
-        </header>
-        <section id="showcase">
-           <div class="container">
+		</div>
+        <div class="nav">
+            <a href="../">Home</a>
+            <a href="../../../../projects/">Projects</a>
+            <a href="https://github.com/easthighNerd/">Github</a>
+            <a class="current" href="../../../">Blog</a>
+            <a class="social" rel="me" href="https://busshi.moe/@easthighNerd">Mastodon</a>
+            <a class="social" href="https://pixelfed.social/easthighNerd">Pixelfed</a>
+        </div>
+
+        <div class="body">
             <h1>Nexus 7 2013 (WiFi) and Ubuntu Touch</h1>
-            <img src="./nexus-7-2013-wifi-scopes.png" width=100%>
+            <img class="screenshot" src="./nexus-7-2013-wifi-scopes.png" width=100%>
             <p>About a month ago (give or take) I purchased a Nexus 7 2013 (WiFi) with the intent of flashing Ubuntu Touch (OTA 9) onto it. I had previously flashed Ubuntu Touch onto a Nexus 5 that I had gotten for Christmas last year, again with the intent of flashing Ubuntu Touch onto it, so I knew what I could look forward to and what I could expect.</p>
             <hr>
             <h2>Flashing Ubuntu Touch</h2>
-            <img src="./ubports-installer-nexus-7-2013-wifi.png" width=100%>
+            <img class="screenshot" src="./ubports-installer-nexus-7-2013-wifi.png" width=100%>
             <p>Flashing Ubuntu Touch onto the Nexus 7 was pretty easy overall. First thing I had to do was install <code>adb</code> and <code>fastboot</code> onto my computer (running Ubuntu), as well as the <code>ubports-installer</code> snap.</p>
             <p>Next, on the nexus 7 I needed to enable developer mode, enable USB debugging, unlock the bootloader, and re-enable dev mode and USB debugging. After that, I hooked up the Nexus 7 to my PC and launched the UBports Installer. It detected that the Nexus 7 was connected and pulled up the menu for flashing it right away. I clicked the needed buttons to flash it and let it do it's thing.</p>
             <hr>
@@ -95,8 +67,7 @@ height="100">
             <p style="font-size: 15px;"><i>*TELEports is still in beta as of writing</i></p>
             <br>
             <br>
-            <p style="font-size: 20px;"><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" height="20px" /></a> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
-            </div>
-        </section>
+            <p style="font-size: 20px;"><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" height="20px" /></a> This work is licensed under a <a class="inline-link" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+        </div>
 	</body>
 </html>
