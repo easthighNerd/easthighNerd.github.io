@@ -38,4 +38,4 @@ gsettings set org.gnome.shell enabled-extensions "['places-menu@gnome-shell-exte
 notify-send -u normal "Tails Configuration Script" "All set captain! Now launching For Browser..."
 
 # Launch For Browser to Security Level
-nohup tor-browser 'about:preferences#privacy-securitylevel' 'https://3g2upl4pq6kufc4m.onion'
+nohup tor-browser 'about:preferences#privacy-securitylevel' 'https://3g2upl4pq6kufc4m.onion' </dev/null &> /dev/null &
