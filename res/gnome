@@ -35,4 +35,7 @@ gsettings set org.gnome.shell favorite-apps "['tor-browser.desktop', 'org.gnome.
 gsettings set org.gnome.shell enabled-extensions "['places-menu@gnome-shell-extensions.gcampax.github.com', 'TopIcons@phocean.net', 'status-menu-helper@tails.boum.org', 'torstatus@tails.boum.org']"
 
 # Notify everything should be configured
-notify-send -a wget -u normal "All set captain!"
+notify-send -u normal "Tails Configuration Script" "All set captain! Now launching For Browser..."
+
+# Launch For Browser to Security Level
+nohup tor-browser 'about:preferences#privacy-securitylevel' 'https://3g2upl4pq6kufc4m.onion'
